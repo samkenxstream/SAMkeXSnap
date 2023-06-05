@@ -18,6 +18,7 @@
     "build:website": "node ./scripts/build-website.js",
     "build": "mm-snap build",
     "serve": "mm-snap serve",
+    "watch": "mm-snap watch",
     "clean": "rimraf dist/*",
     "test": "echo 'TODO'",
     "lint:eslint": "eslint . --cache --ext js,ts",
@@ -27,11 +28,11 @@
     "lint:changelog": "yarn auto-changelog validate"
   },
   "devDependencies": {
-    "@metamask/auto-changelog": "^2.5.0",
+    "@metamask/auto-changelog": "^3.0.0",
     "@metamask/eslint-config": "^8.0.0",
     "@metamask/eslint-config-jest": "^8.0.0",
     "@metamask/eslint-config-nodejs": "^8.0.0",
-    "@metamask/snaps-cli": "^0.14.0",
+    "@metamask/snaps-cli": "^0.23.0",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
@@ -47,6 +48,6 @@
     "registry": "https://registry.npmjs.org/"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
   }
 }
